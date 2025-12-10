@@ -61,14 +61,17 @@ INSERT INTO
 VALUES
     ('CARD', '2023-10-01', TRUE),
     ('CASH', '2023-10-02', TRUE),
-    ('CARD', '2023-10-03', FALSE);
+    ('CARD', '2023-10-03', FALSE),
+    ('CASH', '2023-12-07', TRUE);
 
 INSERT INTO
     ORDERS (CUSTOMER_ID, PAYMENT_ID, CREATION_DATE, TOTAL)
 VALUES
     (1, 1, '2023-10-01', 25.50),
     (2, 2, '2023-10-02', 40.00),
-    (1, 3, '2023-10-03', 15.75);
+    (1, 3, '2023-10-03', 15.75),
+    (1, 4, '2023-12-07', 15.75);
+    
 
 INSERT INTO
     ORDERS_ITEM (ORDER_ID, PRODUCT_ID, PRICE, QUANTITY)
@@ -76,4 +79,6 @@ VALUES
     (1, 3, 19.99, 1),
     (1, 4, 5.51, 1),
     (2, 1, 599.99, 1),
-    (3, 2, 1200.50, 1);
+    (3, 2, 1200.50, 1),
+    (4, 2, 1200.50, 1);
+    
