@@ -41,20 +41,21 @@ VALUES
 INSERT INTO
     PRODUCTS (NAME, PRICE, CATEGORY_ID)
 VALUES
-    ('Parka invierno', 74990, 1),
-    ('Carpa para 4 personas', 90000, 2),
-    ('Lentes con filtro UV', 15990, 3),
-    ('Cantimplora 1L', 24990, 4),
-    ('Gorro de lana XL', 24990, 1);
+    ('Parka invierno', 50000, 1),
+    ('Carpa para 4 personas', 100000, 2),
+    ('Lentes con filtro UV', 20000, 3),
+    ('Cantimplora 1L', 30000, 4),
+    ('Gorro de lana XL', 5000, 1);
 
 
 INSERT INTO
     INVENTORY (PRODUCT_ID, QUANTITY)
 VALUES
     (1, 75),
-    (2, 8),
+    (2, 5),
     (3, 50),
-    (4, 13);
+    (4, 13),
+    (5, 25);
 
 INSERT INTO
     PAYMENTS (METHOD, PAYDAY, PAID)
@@ -62,23 +63,27 @@ VALUES
     ('CARD', '2023-10-01', TRUE),
     ('CASH', '2023-10-02', TRUE),
     ('CARD', '2023-10-03', FALSE),
-    ('CASH', '2023-12-07', TRUE);
+    ('CASH', '2023-12-07', TRUE),
+    ('CARD', '2023-12-08', TRUE);
 
 INSERT INTO
     ORDERS (CUSTOMER_ID, PAYMENT_ID, CREATION_DATE, TOTAL)
 VALUES
-    (1, 1, '2023-10-01', 25.50),
-    (2, 2, '2023-10-02', 40.00),
-    (1, 3, '2023-10-03', 15.75),
-    (1, 4, '2023-12-07', 15.75);
+    (1, 1, '2023-10-01', 50000),
+    (2, 2, '2023-10-02', 50000),
+    (1, 3, '2023-10-03', 105000),
+    (1, 4, '2023-12-07', 100000),
+    (2, 5, '2023-12-08', 300000);
     
 
 INSERT INTO
     ORDERS_ITEM (ORDER_ID, PRODUCT_ID, PRICE, QUANTITY)
 VALUES
-    (1, 3, 19.99, 1),
-    (1, 4, 5.51, 1),
-    (2, 1, 599.99, 1),
-    (3, 2, 1200.50, 1),
-    (4, 2, 1200.50, 1);
+    (1, 3, 20000, 1),
+    (1, 4, 30000, 1),
+    (2, 1, 50000, 1),
+    (3, 2, 100000, 1),
+    (3, 5, 5000, 1),
+    (4, 2, 100000, 1),
+    (5, 2, 100000, 3);
     
