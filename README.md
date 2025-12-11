@@ -1,9 +1,14 @@
-# Tabla de contenidos
-- [Tabla de contenidos](#tabla-de-contenidos)
+<h1>Tabla de contenidos</h1>
+
+- [Tecnologías](#tecnologías)
 - [Propósito](#propósito)
 - [Pasos](#pasos)
 - [Evidencias](#evidencias)
 
+# Tecnologías
+
+PostgreSQL: "PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35219, 64-bit"
+pgAdmin 4: 9.10
 
 # Propósito
 
